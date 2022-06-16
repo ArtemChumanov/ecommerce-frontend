@@ -1,0 +1,212 @@
+{
+  "brands": [
+    {
+      "id": "1",
+      "name": "Turnigy"
+    },
+    {
+      "id": "2",
+      "name": "FlySky"
+    },
+    {
+      "id": "3",
+      "name": "Zippy"
+    }
+  ],
+  "category": [
+    {
+      "id": "1",
+      "name": "Літаки",
+      "categoryType": "planes",
+      "subcategory": []
+    },
+    {
+      "id": "2",
+      "name": "Вертольоти",
+      "categoryType": "helicopters",
+      "subcategory": []
+    },
+    {
+      "id": "3",
+      "name": "Квадрокоптери",
+      "categoryType": "quadcopters",
+      "subcategory": []
+    },
+    {
+      "id": "4",
+      "name": "Машини",
+      "categoryType": "cars",
+      "subcategory": []
+    },
+    {
+      "id": "5",
+      "name": "Кораблі",
+      "categoryType": "ships",
+      "subcategory": []
+    },
+    {
+      "id": "6",
+      "name": "Інструменти",
+      "categoryType": "tools",
+      "subcategory": []
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "question": "Добрий день. А чи підійде до UE32T4500?",
+      "date": "11.12.34",
+      "answers": [
+        {
+          "id": 2,
+          "date": "22.05.22",
+          "text": "WERTY"
+        },
+        {
+          "id": 1,
+          "date": "22.05.22",
+          "text": "ccccccczxczczxczcc"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "question": "Добрий день. А чи підійде до UE32T4500?",
+      "date": "11.12.34",
+      "answers": [
+        {
+          "id": "1",
+          "text": "Yes",
+          "date": "11.12.34"
+        },
+        {
+          "id": "2",
+          "text": "no",
+          "date": "11.12.34"
+        }
+      ]
+    },
+    {
+      "question": "Example1Example1Example1Example1Example1Example1",
+      "date": "21.05.22",
+      "answers": [],
+      "id": "4aXnwh_"
+    },
+    {
+      "question": "xZXxxxxxxxxxxxxxxxxx",
+      "date": "22.05.22",
+      "answers": [],
+      "id": "u4t-J4t"
+    },
+    {
+      "id": "aiSdzCu",
+      "question": "ffffffffffffffffffffff",
+      "date": "22.05.22",
+      "answers": [
+        {
+          "id": 0,
+          "date": "22.05.22",
+          "text": "dasdaddddd"
+        }
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "brands": "Turnigy",
+      "category": "planes",
+      "image": "https://cdn-global-hk.hobbyking.com/media/catalog/product/cache/6/image/660x415/17f82f742ffe127f42dca9de82fb58b1/k/i/kingtwin-white-version-pnp-9310000473-0-10_2.jpg",
+      "images": [
+        "https://cdn-global-hk.hobbyking.com/media/catalog/product/cache/6/image/660x415/17f82f742ffe127f42dca9de82fb58b1/k/i/kingtwin-white-version-pnp-9310000473-0-8.jpg",
+        "https://cdn-global-hk.hobbyking.com/media/catalog/product/cache/6/image/660x415/17f82f742ffe127f42dca9de82fb58b1/k/i/kingtwin-white-version-pnp-9310000473-0-9.jpg",
+        "https://cdn-global-hk.hobbyking.com/media/catalog/product/cache/6/image/660x415/17f82f742ffe127f42dca9de82fb58b1/k/i/kingtwin-white-version-pnp-9310000473-0-11.jpg"
+      ],
+      "descriptionInfo": "<p><strong>Функции:</strong><br />&bull; Впечатляющий размер и летные характеристики.<br />&bull; Фюзеляж и крылья из облегченной фанеры / бальзовой стали.<br />&bull; Двухсекционное крыло для облегчения транспортировки и сборки.<br />&bull; Варианты монтажа газового, тлеющего или электрического<br />&bull; Поверхности управления подвешены и установлены<br />&bull; Детально проработанная кабина с расписанным вручную пилотом<br />&bull; Кожух из стекловолокна с подробными линиями панелей.</p>\n<p><br /><strong>Технические характеристики:</strong><br />Тип:<strong> VQ Models Cessna 188 \"Agwagon\" (ARF) Бальза и Плай Самолет внутреннего сгорания или электрический</strong><br />Размах крыла: <strong>1920мм (75.5 дюйма)</strong><br />Длина: <strong>1300мм (51\")</strong><br />AUW Ready to Fly:<strong> 3.5кг (7.72 фунта}, зависит от настройки</strong><br />Двигатель: <strong>0,60 (нитро/газ, 2-тактный/ 90 (4-тактный) или электрический эквивалент</strong><br />Радио:<strong> 6 каналов с 7 или 8 сервоприводами</strong><br />Электродвигатель: <strong>двигатели мощностью 300~400 кВт (рекомендуется Turnigy G90-325KV или NTM 5060 380KV)</strong><br />ESC: <strong>60~80A или выше</strong><br />Аккумулятор: <strong>6S 5000 мАч или выше LiPo или LiHV</strong></p>\n<p><br /><strong>Некоторые предлагаемые настройки мощности:</strong><br />В каждой установке используется литий-полимерный аккумулятор емкостью 6S 5000 мАч и регулятор скорости 80А.</p>\n<p><br />Turnigy G90-325KV с 18x8 2 лопастями: 958 Вт, 46А, статическая тяга 4860г, время смешанного полета 11 минут.<br />Turnigy SK3 5055-320KV с лопастями 17x10 2: 1048 Вт, 49А, статическая тяга 4990г, время смешанного полета 10.5 мин.<br />Turnigy SK3 5065-320KV с лопастями 17x10 2: 1124 Вт, 53А, статическая тяга 5301г, смешанный полет 10.2 мин.<br />Turnigy SK3 5055-380KV с лопастями 17x6 2: 949 Вт, 42А, статическая тяга 3710г, время смешанного полета 10.5 мин.<br />NTM PropDrive 5060-380KV с лопастями 17x8 2: 1412 Вт, 65А, статическая тяга 5658г, время смешанного полета 8.5 мин.</p>\n<p><br /><strong>Требуется (не входит в комплект) Электрическая версия:</strong><br />6-канальный или более передатчик и приемник<br />6 сервоприводов стандартного размера (рекомендуется металлическая шестерня)<br />Электронный регулятор скорости 60~80A или более с BEC или отдельным блоком BEC<br />G90-325KV, NTM 5060-380KV или аналогичный бесщеточный двигатель с опорным бегунком<br />Аккумулятор LiPo или LiHV 6S 5000 мАч или выше<br />Подходящий пропеллер<br />Расширение приводит<br />Эпоксидная смола 5 и 30 минут, клей CA, силиконовый герметик<br />Инструменты (как указано в руководстве по сборке)</p>\n<p><br /><strong>Требуется (не входит в комплект) Версия для внутреннего сгорания:</strong><br />6-канальный или более передатчик и приемник<br />7 сервоприводов стандартного размера (для летающих поверхностей рекомендуется металлическая шестерня)<br />2-тактный нитро / газовый двигатель .60 или 4-тактный нитро-двигатель .90<br />Подходящий пропеллер<br />Топливная трубка в соответствии с используемым топливом<br />Расширение приводит<br />Аккумулятор приемника и переключатель включения / выключения<br />Эпоксидная смола 5 и 30 минут, клей CA, силиконовый герметик<br />Инструменты (как указано в руководстве по сборке)</p>\n<p><br /><strong>Обратите внимание:</strong> набор инструкций по сборке с пошаговыми иллюстрациями доступен для загрузки на вкладке &laquo;Файлы&raquo; выше.</p>",
+      "descriptionName": "VQ Models Cessna 188 \"Agwagon\" (ARF)",
+      "name": "Cessna",
+      "price": "1000",
+      "rating": 4
+    },
+    {
+      "id": "2",
+      "brands": "FlySky",
+      "category": "planes",
+      "image": "https://cdn-global-hk.hobbyking.com/media/catalog/product/cache/6/image/660x415/17f82f742ffe127f42dca9de82fb58b1/d/u/durafly-night-tundra-1300mm-51-sports-model-wflapsa-9499000421-19.jpg",
+      "images": [
+        "https://cdn-global-hk.hobbyking.com/media/catalog/product/cache/6/image/660x415/17f82f742ffe127f42dca9de82fb58b1/d/u/durafly-night-tundra-1300mm-51-sports-model-wflapsa-9499000421-1.jpg",
+        "https://cdn-global-hk.hobbyking.com/media/catalog/product/cache/6/image/660x415/17f82f742ffe127f42dca9de82fb58b1/d/u/durafly-night-tundra-1300mm-51-sports-model-wflapsa-9499000421-3.jpg",
+        "https://cdn-global-hk.hobbyking.com/media/catalog/product/cache/6/image/660x415/17f82f742ffe127f42dca9de82fb58b1/d/u/durafly-night-tundra-1300mm-51-sports-model-wflapsa-9499000421-4.jpg"
+      ],
+      "descriptionInfo": "<p><br />The Night Tundra includes all the improvements made on the Tundra V2. These include the vortex generators added to the leading edge of the wing to increase stability at slow speeds, a more secure and easier to install landing gear thanks to machine screws and brass inserts, and the metal landing gear cross braces for improved durability. Also included is the improved battery tray, wing connectors, wing mount, upgraded motor, and Aerostar 40 amp ESC with reverse.</p>\n<p><br />Simply put, the Night Tundra is an immense amount of fun to fly, and you will be flying very quickly due to the very straightforward and speedy assembly process. Take on the very best mother nature can throw at you either in daytime or nighttime, and still come up smiling. With the Night Tundra, there are literally no limits!</p>\n<p><br /><strong>Features:</strong><br />&bull; Super bright LED lighting system for twilight and night flying<br />&bull; Two-piece wing with dedicated wing connectors<br />&bull; Beautifully molded, rugged EPO construction<br />&bull; Pre-installed 3S powertrain offering near-vertical performance<br />&bull; Bush-style landing gear with huge molded foam rubber wheels and improved metal cross brace mount<br />&bull; 'Barndoor' style flaps and vortex generators for true STOL performance and super slow flight<br />&bull; FPV canopy tray, floats and water rudder included</p>\n<p><br /><strong>Specs:</strong><br />Model: <strong>Durafly Night Tundra (PNF) STOL/Sports Model w/Full LED Lighting System</strong><br />Wingspan: <strong>1300mm (51\")</strong><br />Length:<strong> 920mm (36.25\")</strong><br />Wing Area: <strong>26dm2</strong><br />Flying Weight: <strong>1150g</strong><br />Number of Channels: <strong>6 (throttle, ailerons, elevator, rudder, flaps, lights)</strong><br />Motor: <strong>3636-900KV brushless outrunner</strong><br />ESC: <strong>Aerostar 40A brushless ESC w/reverse</strong><br />Servos:<strong> 6 x 9g</strong><br />Lights: <strong>Full LED lighting system</strong><br />Prop: <strong>Durafly carbon fiber 12x6</strong></p>\n<p><br /><strong>Included:</strong><br />1 x Durafly Night Tundra airframe<br />1 x Full LED lighting system<br />1 x 3636-900KV brushless motor<br />1 x Aerostar 40A brushless ESC w/reverse<br />1 x 12x6 carbon fiber propeller<br />6 x 9g servos<br />1 x Floats set w/water rudder<br />1 x FPV canopy<br />1 x Complete hardware pack w/Tundra wheels<br />1 x Quick start instruction guide</p>\n<p><br /><strong>Required:</strong><br />6-7CH transmitter and receiver<br />3S 11.1V 1800~2200mAh LiPo battery (30C minimum)<br />Suitable LiPo battery charger</p>\n<p><br /><strong>Please note:</strong> A copy of the full manual can be found under the <strong>\"Manuals/Files\"</strong> tab above.</p>",
+      "descriptionName": "H-King Bixler 3 Glider 1550mm",
+      "name": "H-King",
+      "price": "9900",
+      "rating": 3
+    },
+    {
+      "id": "3",
+      "brands": "Zippy",
+      "category": "planes",
+      "image": "https://cdn-global-hk.hobbyking.com/media/catalog/product/cache/6/image/660x415/17f82f742ffe127f42dca9de82fb58b1/h/-/h-king-mx2_-extreme-30e-4s-epo-3d-airplane_1270mm-9152000024-0-1.jpg",
+      "images": [
+        "https://cdn-global-hk.hobbyking.com/media/catalog/product/cache/6/image/660x415/17f82f742ffe127f42dca9de82fb58b1/m/x/mx2-30e-standard-pnp-9152000024-0-12_1.jpg",
+        "https://cdn-global-hk.hobbyking.com/media/catalog/product/cache/6/image/660x415/17f82f742ffe127f42dca9de82fb58b1/m/x/mx2-30e-standard-pnp-9152000024-0-14_1.jpg",
+        "https://cdn-global-hk.hobbyking.com/media/catalog/product/cache/6/image/660x415/17f82f742ffe127f42dca9de82fb58b1/m/x/mx2-30e-standard-pnp-9152000024-0-15_1.jpg"
+      ],
+      "descriptionInfo": "<p>This palm-sized micro helicopter is packed full of features to help make it fun and relatively easy to fly. The flybarless system coupled with the 6-axis gyro stabilization unit gives it a stability not seen in many helicopters of this size before. The included 2.4GHz transmitter gives you full control of the helicopter. It allows you to climb or descend, fly backward and forwards, fly left and right, and rotate left and right. You can also select whether you wish to fly Mode 1 or Mode 2, and also there is a switch to increase or decrease the amount of rudder authority.</p>\n<p><br />One of the features which will help beginners immensely is an auto take-off and landing button, a single press of the one-key button will make the helicopter take-off to an altitude of about 1.5 meters, press the same button again and it will safely land. Then there is the \"Altitude Hold\", this is controlled via a barometric sensor, the helicopter will hold any height you set and will stay there when the throttle stick is set at neutral. To move to a new altitude simply move the throttle stick up or down until you reach the altitude you want, return the stick to neutral and it will stay there until you move the throttle stick again. An emergency stop function is also supplied, press, and hold the altitude button for 3 seconds and this will stop the motor instantly.</p>\n<p><br />Being flybarless reduces the risk of damage to the helicopter in the event of a crash and also increases the flight time due to less drag. The included 300mAh 25C 1 cell modular battery is quick and easy to install and gives the Firefox an amazing duration of up to 15 minutes. This modular battery is charged using the supplied USB charger, this provides a fast and stable charge process. The Firefox is manufactured using high-performance components and materials which provide strength, are impact-resistant, and made to last.</p>\n<p><br /><strong>Features:</strong><br />&bull; Fitted with a 6-axis gyro and flybarless system for the ultimate in stabilization<br />&bull; Includes a switchable 2.4GHz Mode 1/Mode 2 transmitter<br />&bull; Uses a barometric sensor for altitude hold<br />&bull; Auto take-off and land function<br />&bull; Flight times of up to 15 minutes<br />&bull; Manufactured in crash-resistant materials<br />&bull; Emergency stop function</p>\n<p><br /><strong>Specs:</strong><br />Type: <strong>Firefox C129 RTF 4ch Flybarless Micro Helicopter</strong><br />Frequency:<strong> 2.4GHz</strong><br />No of Channels:<strong> 4</strong><br />Transmitter Range: <strong>80~100 meters</strong><br />Transmitter Modes: <strong>Mode 1 (right-hand throttle)/Mode 2 (left-hand throttle) switchable</strong><br />Motors: <strong>Brushed</strong><br />Battery: <strong>3.7V 300mAh LiPo</strong><br />Charging Time: <strong>60 minutes</strong><br />Flight Duration: <strong>Up to 15 minutes</strong><br />Body Length: <strong>267mm</strong><br />Body Height:<strong> 80mm</strong><br />Rotor Diameter: <strong>248mm</strong><br />Color:<strong> Orange</strong><br />Weight: <strong>50g</strong></p>",
+      "descriptionName": "Volantex 757-7 Ranger (PNF)",
+      "name": "Volantex",
+      "price": "12000",
+      "rating": 4
+    },
+    {
+      "id": "4",
+      "brands": "1",
+      "category": "helicopters",
+      "image": "https://cdn-global-hk.hobbyking.com/media/catalog/product/cache/6/image/660x415/17f82f742ffe127f42dca9de82fb58b1/f/i/firefox-c129-4ch-flybarless-micro-rc-helicopter-rtf-w6-axis-gyro-orange-9100200033-0-1.jpg",
+      "images": [
+        "https://cdn-global-hk.hobbyking.com/media/catalog/product/cache/6/image/660x415/17f82f742ffe127f42dca9de82fb58b1/f/i/firefox-c129-4ch-flybarless-micro-rc-helicopter-rtf-w6-axis-gyro-orange-9100200033-0-2.jpg",
+        "https://cdn-global-hk.hobbyking.com/media/catalog/product/cache/6/image/660x415/17f82f742ffe127f42dca9de82fb58b1/f/i/firefox-c129-4ch-flybarless-micro-rc-helicopter-rtf-w6-axis-gyro-orange-9100200033-0-4.jpg",
+        "https://cdn-global-hk.hobbyking.com/media/catalog/product/cache/6/image/660x415/17f82f742ffe127f42dca9de82fb58b1/f/i/firefox-c129-4ch-flybarless-micro-rc-helicopter-rtf-w6-axis-gyro-orange-9100200033-0-3.jpg"
+      ],
+      "descriptionInfo": "<div><span>По горячим следам оригинальный Aquaholic - версия V2 с еще более мощной бесщеточной системой и переработанной надстройкой. Бесщеточный бесколлекторный двигатель с водяным охлаждением 2815 в сочетании с высококачественным 60-амперным ESC с водяным охлаждением обеспечит вам скорость волдыря свыше 60 км / ч по вашему любимому озеру для лодок. Аквахолик сохранил хорошо зарекомендовавший себя дизайн ABS с глубоким V-образным корпусом, который дает ему невероятную скорость и устойчивость по прямой линии, но также позволяет ему копать и включать копейки.</span></div>\n<div><span></span></div>\n<div><span><br />Эта готовая к эксплуатации версия комплектуется 2-х канальной радиосистемой Hobbyking GT2E AFHDS 2A 2,4 ГГц с водонепроницаемым приемником и мощным рулевым усилителем 37 г. Привод от двигателя к высокоэффективному металлическому винту с 3 лопастями обеспечивается очень прочной 4-миллиметровой гибкой системой прямого привода, а рулевое управление осуществляется с помощью подвесного штатива. Это устройство поддерживает конец гребного винта гибкой системы привода параллельно корпусу для оптимальной тяги, а также устанавливает рулевое устройство в оптимальное положение для точного и контролируемого рулевого управления.</span></div>\n<div><span></span></div>\n<div><span><br /><strong>NB:</strong> Полный ассортимент запчастей будет доступен в ближайшее время, когда они будут добавлены к соответствующим продуктам ниже, пожалуйста, посмотрите это место.</span></div>\n<div><span></span></div>\n<div><span> <br /><strong> Функции: </strong> <br />&bull; Мощная бесщеточная система с водяным охлаждением и 60-амперным водяным охлаждением ESC <br />&bull; Поставляется с цифровой пропорциональной радиосистемой Hobbyking GT2E 2,4 ГГц и мощным рулевым сервоприводом <br />&bull; Корпус Deep Vee для превосходной устойчивости и маневрирования <br />&bull; Высокоэффективный металлический пропеллер с 3 лопастями для пробивания поверхности <br />&bull; Прочный 4-миллиметровый гибкий приводной вал с опорой задней стойки <br />&bull; Яркая желтая и черная цветовая гамма <br />&bull; Поставляется с прочной подставкой для дисплея </span></div>\n<div><span></span></div>\n<div><span> <br /><strong> Характеристики: </strong> <br />Тип: <strong> H-King Marine Aquaholic V2 Бесщеточный гоночный катер с глубоким вырезом </strong> <br />Длина: <strong> 730 мм (28,7 дюйма) </strong> <br />Луч: <strong> 180 мм (7,09 дюйма) </strong> <br />Материал корпуса / надстройки: <strong> Прочный прочный ABS </strong> <br />Скорость: <strong> 60 + км / час </strong> <br />Двигатель: <strong> Бесщеточный двигатель с водяным охлаждением 2815 </strong> <br />Регулятор скорости: <strong> бесщеточный 60 ампер с BEC </strong> <br />Привод: <strong> 4-миллиметровый гибкий вал с прямым приводом </strong> <br />Радиосистема: <strong> Hobbyking GT2E AFHDS 2A 2,4 ГГц 2-канальная радиосистема с водонепроницаемым приемником </strong> <br />Сервопривод руля: <strong> Мощное устройство весом 37 г </strong> <br />Цвет: <strong> желтый / черный </strong> </span></div>\n<div><span></span></div>\n<div><span> <br /><strong> Требуется (не входит в комплект): </strong> <br />2 x 7,4 В (2S) 4000 мАч 35С или более для липо-батарейных блоков <br />1 x Интеллектуальный функциональное зарядное устройство для липо-аккумуляторов <br />4 батарейки типа &laquo;АА&raquo; для передатчика </span></div>",
+      "descriptionName": "Firefox C129 4ch Flybarless Micro RC Helicopter ",
+      "name": "Flybarless",
+      "price": "12000",
+      "rating": 5
+    },
+    {
+      "id": "5",
+      "brands": "1",
+      "category": "ships",
+      "image": "https://cdn-global-hk.hobbyking.com/media/catalog/product/cache/6/image/660x415/17f82f742ffe127f42dca9de82fb58b1/h/-/h-king-marine-aquaholic-v2-brushless-rtr-deep-vee-racing-boat-730mm-yellow-back-boats-9215000139-0-4.jpg",
+      "images": [
+        "https://cdn-global-hk.hobbyking.com/media/catalog/product/cache/6/image/660x415/17f82f742ffe127f42dca9de82fb58b1/h/-/h-king-marine-aquaholic-v2-brushless-rtr-deep-vee-racing-boat-730mm-yellow-back-boats-9215000139-0-1.jpg",
+        "https://cdn-global-hk.hobbyking.com/media/catalog/product/cache/6/image/660x415/17f82f742ffe127f42dca9de82fb58b1/h/-/h-king-marine-aquaholic-v2-brushless-rtr-deep-vee-racing-boat-730mm-yellow-back-boats-9215000139-0-3.jpg",
+        "https://cdn-global-hk.hobbyking.com/media/catalog/product/cache/6/image/660x415/17f82f742ffe127f42dca9de82fb58b1/h/-/h-king-marine-aquaholic-v2-brushless-rtr-deep-vee-racing-boat-730mm-yellow-back-boats-9215000139-0-5.jpg"
+      ],
+      "descriptionInfo": "<div><span>По горячим следам оригинальный Aquaholic - версия V2 с еще более мощной бесщеточной системой и переработанной надстройкой. Бесщеточный бесколлекторный двигатель с водяным охлаждением 2815 в сочетании с высококачественным 60-амперным ESC с водяным охлаждением обеспечит вам скорость волдыря свыше 60 км / ч по вашему любимому озеру для лодок. Аквахолик сохранил хорошо зарекомендовавший себя дизайн ABS с глубоким V-образным корпусом, который дает ему невероятную скорость и устойчивость по прямой линии, но также позволяет ему копать и включать копейки.</span></div>\n<div><span></span></div>\n<div><span><br />Эта готовая к эксплуатации версия комплектуется 2-х канальной радиосистемой Hobbyking GT2E AFHDS 2A 2,4 ГГц с водонепроницаемым приемником и мощным рулевым усилителем 37 г. Привод от двигателя к высокоэффективному металлическому винту с 3 лопастями обеспечивается очень прочной 4-миллиметровой гибкой системой прямого привода, а рулевое управление осуществляется с помощью подвесного штатива. Это устройство поддерживает конец гребного винта гибкой системы привода параллельно корпусу для оптимальной тяги, а также устанавливает рулевое устройство в оптимальное положение для точного и контролируемого рулевого управления.</span></div>\n<div><span></span></div>\n<div><span><br /><strong>NB:</strong> Полный ассортимент запчастей будет доступен в ближайшее время, когда они будут добавлены к соответствующим продуктам ниже, пожалуйста, посмотрите это место.</span></div>\n<div><span></span></div>\n<div><span> <br /><strong> Функции: </strong> <br />&bull; Мощная бесщеточная система с водяным охлаждением и 60-амперным водяным охлаждением ESC <br />&bull; Поставляется с цифровой пропорциональной радиосистемой Hobbyking GT2E 2,4 ГГц и мощным рулевым сервоприводом <br />&bull; Корпус Deep Vee для превосходной устойчивости и маневрирования <br />&bull; Высокоэффективный металлический пропеллер с 3 лопастями для пробивания поверхности <br />&bull; Прочный 4-миллиметровый гибкий приводной вал с опорой задней стойки <br />&bull; Яркая желтая и черная цветовая гамма <br />&bull; Поставляется с прочной подставкой для дисплея </span></div>\n<div><span></span></div>\n<div><span> <br /><strong> Характеристики: </strong> <br />Тип: <strong> H-King Marine Aquaholic V2 Бесщеточный гоночный катер с глубоким вырезом </strong> <br />Длина: <strong> 730 мм (28,7 дюйма) </strong> <br />Луч: <strong> 180 мм (7,09 дюйма) </strong> <br />Материал корпуса / надстройки: <strong> Прочный прочный ABS </strong> <br />Скорость: <strong> 60 + км / час </strong> <br />Двигатель: <strong> Бесщеточный двигатель с водяным охлаждением 2815 </strong> <br />Регулятор скорости: <strong> бесщеточный 60 ампер с BEC </strong> <br />Привод: <strong> 4-миллиметровый гибкий вал с прямым приводом </strong> <br />Радиосистема: <strong> Hobbyking GT2E AFHDS 2A 2,4 ГГц 2-канальная радиосистема с водонепроницаемым приемником </strong> <br />Сервопривод руля: <strong> Мощное устройство весом 37 г </strong> <br />Цвет: <strong> желтый / черный </strong> </span></div>\n<div><span></span></div>\n<div><span> <br /><strong> Требуется (не входит в комплект): </strong> <br />2 x 7,4 В (2S) 4000 мАч 35С или более для липо-батарейных блоков <br />1 x Интеллектуальный функциональное зарядное устройство для липо-аккумуляторов <br />4 батарейки типа &laquo;АА&raquo; для передатчика </span></div>",
+      "descriptionName": "H-King Marine Aquaholic V2",
+      "name": "H-King",
+      "price": "12000",
+      "rating": 5
+    },
+    {
+      "id": "6",
+      "brands": "1",
+      "category": "quadcopters",
+      "image": "https://cdn-global-hk.hobbyking.com/media/catalog/product/cache/6/image/660x415/17f82f742ffe127f42dca9de82fb58b1/legacy/catalog/29595-sub1.jpg",
+      "images": [
+        "https://cdn-global-hk.hobbyking.com/media/catalog/product/cache/6/image/660x415/17f82f742ffe127f42dca9de82fb58b1/legacy/catalog/29595-main.jpg",
+        "https://cdn-global-hk.hobbyking.com/media/catalog/product/cache/6/thumbnail/180x100/9df78eab33525d08d6e5fb8d27136e95/legacy/catalog/29595-sub4.jpg",
+        "https://cdn-global-hk.hobbyking.com/media/catalog/product/cache/6/image/660x415/17f82f742ffe127f42dca9de82fb58b1/legacy/catalog/29595-sub3.jpg"
+      ],
+      "descriptionInfo": "<p>Представляя данный HobbyKing FPV250 Дух В4 издание беспилотник, с размером беспилотный мини с большой FPV и ночь летать весело возможности.</p>\n<p>FPV250 мини размера FPV беспилотный измерения, по крайней простой 250мм. Этот прочный, недорогой платформы FPV мульти-ротор идеально подходит для FPV гонок или полосу препятствий полета и в вашем местном поле, а теперь с верхними светодиодами облицовочных полной длины руки, что свет полупрозрачную рамку и реквизита для ориентации и ультра-яркий вниз лицом белые светодиоды делают все свечение кадра в ночном небе и даже более заметным в день. Включенный распределительный щит центр питания также имеет встроенную систему 5V UBEC для использования AUX компонента.</p>\n<p>Цельная рама является очень прочным, что дает вам уверенность, чтобы идти FPV гастролирующим и все же весит всего 110 граммов. Передняя платформа предназначена для обработки до 2 серво панорамирования и наклона настройки камеры, а задняя платформа поддерживает видео передатчик, чтобы держать все это хорошо и сбалансировано. FPV250 имеет центр залива, достаточно большой для самых популярных диспетчерами и включает в себя верхнюю аварийную клетку для защиты. Есть четыре интегрированных планки пазы на нижней части, чтобы надежно удерживать батарею на месте для обеспечения высокой G маневрировании. В FPV250 двигательные опоры могут справиться с чем угодно от 1506 до 2208 мотором и вентилируемые руки обеспечивают много охлаждения для 7 ~ 12A ЭСК.</p>\n<p>HobbyKing FPV250 является низкобюджетной FPV раздолбай, готов к Сорвиголова препятствиях или Spec ClassFPV гонок и сейчас ночь полета весело. Пришло время, чтобы начать практиковать свои навыки FPV, гонки сезона готовится начать!</p>\n<p><strong>Особенности: <br />&bull;</strong> Ультра яркий полная рука длина рамы для светодиодов , смонтированных <strong><br />&bull;</strong> Все ясно , рамка , которая захватывает светодиодные огни и светится <strong><br />&bull;</strong> включены четкие гребной винт , который осветит со светодиодами верхних облицовочных <br />&bull; Встроенный 5V UBEC и PDB <strong><br /></strong> &bull; Цельная конструкция для долговечности <br />&bull; Большая 55x55mm клетка защищена полета контроллер залива <br />&bull; Монтаж Поддержка 2-серво панорамирование и наклон камеры и видео передатчик <br />&bull; Широкий ассортимент моторных и энергетических вариантов <br />&bull; Съемные шасси <br />&bull; Входящие в комплект Очистить комплект 5030 проп</p>",
+      "descriptionName": "SpyderByte 190 Lightning X",
+      "name": "SpyderByte",
+      "price": "12000",
+      "rating": 2
+    }
+  ]
+}

@@ -1,39 +1,30 @@
 import { createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
 import { mockComments, MockDataProducts } from "../../utils/mockData";
 import axios from "axios";
+import { url } from "../../config/config";
 
 export const fetchGetProducts = createAsyncThunk(
   "products/fetchAllProducts",
   async (payload?: PayloadAction<any>) => {
-    //axios Request
-    try {
-      const { data } = await axios.get(" http://localhost:3004/products");
-      return data;
-    } catch (e) {}
+    const { data } = await axios.get(`${url}/products`);
+    return data;
   }
 );
 
-export const fetchCurrentProduct = createAsyncThunk(
+export const fetchCurrentProduct1 = createAsyncThunk(
   "products/fetchCurrentProduct",
   async (payload: string) => {
-    //axios Request
-    try {
-      const { data } = await axios.get(
-        `http://localhost:3004/products/${payload}`
-      );
-      return data;
-    } catch (e) {}
+    const { data } = await axios.get(`${url}/products/${payload}`);
+    return data;
   }
 );
 
-export const fetchReviewByProduct = createAsyncThunk(
+export const fetchReviewByProduct1 = createAsyncThunk(
   "products/fetchReviewsByProduct",
   async (payload?: PayloadAction<number>) => {
     //axios Request
-    try {
-      const { data } = await axios.get(`http://localhost:3004/comments`);
-      return data;
-    } catch (e) {}
+    const { data } = await axios.get(`${url}/comments`);
+    return data;
   }
 );
 export const addReviewByProduct = createAsyncThunk(
@@ -41,12 +32,7 @@ export const addReviewByProduct = createAsyncThunk(
   async (payload?: any) => {
     //axios Request
     try {
-      console.log(payload);
-      debugger;
-      const { data } = await axios.post(
-        `http://localhost:3004/comments`,
-        payload
-      );
+      const { data } = await axios.post(`${url}/comments`, payload);
       return data;
     } catch (e) {}
   }
@@ -56,10 +42,8 @@ export const updateReviewByProduct = createAsyncThunk(
   async (payload?: any) => {
     //axios Request
     try {
-      console.log(payload);
-      debugger;
       const { data } = await axios.put(
-        `http://localhost:3004/comments/${payload?.id}`,
+        `${url}/comments/${payload?.id}`,
         payload
       );
       return data;

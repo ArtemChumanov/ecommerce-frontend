@@ -2,34 +2,26 @@ import React, { FC } from "react";
 import styled from "styled-components/macro";
 // @ts-ignore
 import RightArrow from "assets/icons/right-arrow.svg";
-import ItemCard from "../../../components/ItemCard/ItemCard";
-import List from "../../../components/List/List";
-import { CategoryType, ProductsType } from "../../../types/types";
-import { useHistory } from "react-router-dom";
-import { RoutesConstants } from "../../../router/RoutesConstants";
-import { Button } from "../../../style/common/Button";
-import { SectionHead } from "../../../style/Global";
+import { ProductsType } from "../../../types/types";
 import SliderCarousel from "../../../components/SliderCarousel/SliderCarousel";
 import Title from "../../../components/shared/UI-elements/Title/Title";
 
-interface PrewiewInfo {
+interface PreviewInfo {
   title: string;
   products: ProductsType[] | null;
 }
 
-const PrewiewInfo: FC<PrewiewInfo> = ({ title, products }) => {
+const PreviewInfo: FC<PreviewInfo> = ({ title, products }) => {
   return (
-    <PrewiewInfoStyle>
+    <PreviewInfoStyle>
       <Title name={title} />
       <SliderCarousel products={products} />
-    </PrewiewInfoStyle>
+    </PreviewInfoStyle>
   );
 };
 
-export default PrewiewInfo;
+export default PreviewInfo;
 
-export const PrewiewInfoStyle = styled.div`
-  //display: flex;
-  //justify-content: space-between;
+export const PreviewInfoStyle = styled.div`
   margin-top: 64px;
 `;

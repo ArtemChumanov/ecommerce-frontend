@@ -34,6 +34,7 @@ const Footer = () => {
               ViberIcon,
             ].map((i) => (
               <Button
+                key={i}
                 title={"dd"}
                 imageButton
                 imagePath={i}
@@ -70,7 +71,6 @@ export const FooterStyle = styled.div`
 `;
 const FooterNavWrapper = styled.div`
   display: flex;
-  //justify-content: space-between;
 `;
 const LiveContainer = styled.div`
   display: flex;

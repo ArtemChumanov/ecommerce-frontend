@@ -6,7 +6,7 @@ const List = ({ item, title, onClick }) => {
     <ListStyle>
       <h2>{title}</h2>
       <ul>
-        {item.slice(0, 5).map((i) => (
+        {item?.slice(0, 5).map((i) => (
           <li key={i} onClick={onClick}>
             {<a href={"#"}>{i.name}</a>}
           </li>

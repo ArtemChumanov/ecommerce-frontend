@@ -11,16 +11,29 @@ import moment from "moment";
 import Rating from "../../../../components/Rating/Rating";
 // @ts-ignore
 import AnswerArrowIcon from "assets/icons/right-arrow-answer.svg";
+import {
+  CommentsStyle,
+  CartStyle,
+  CartHeader,
+  CartContent,
+  TextareaWrapper,
+  AnswerButton,
+  Textarea,
+  AnswersWrapper,
+} from "./Comments.styled";
+
 interface CommentsProps {
   comments: QuestionType[];
   isReviews: boolean;
 }
 interface CartProps {
-  comments: QuestionType;
+  comment: QuestionType;
   isReviews: boolean;
+  setComment: (arg) => void;
+  handleAddComment: (arg) => void;
 }
 
-const Cart: FC<any> = ({
+const Cart: FC<CartProps> = ({
   comment: { id, question, date, answers },
   isReviews,
   setComment,
@@ -33,6 +46,7 @@ const Cart: FC<any> = ({
     setShowTextArea(!showTextArea);
     setComment("");
   };
+
   return (
     <CartStyle>
       <CartHeader>
@@ -45,7 +59,7 @@ const Cart: FC<any> = ({
         <TextareaWrapper>
           {!showTextArea ? (
             <AnswerButton onClick={handleAnswer}>
-              <img src={AnswerArrowIcon} />
+              <img src={AnswerArrowIcon} alt={"answer"} />
               {"Answer"}
             </AnswerButton>
           ) : (
@@ -63,9 +77,10 @@ const Cart: FC<any> = ({
                     question,
                     date,
                     answers: [
+                      //@ts-ignore
                       ...answers,
                       {
-                        id: answers.length,
+                        id: answers?.length,
                         date: moment().format("DD.MM.YY"),
                         text: textAnswer,
                       },
@@ -78,7 +93,7 @@ const Cart: FC<any> = ({
         </TextareaWrapper>
       </CartContent>
       <AnswersWrapper>
-        {answers.map((a) => {
+        {answers?.map((a) => {
           return (
             <>
               <CartHeader>
@@ -130,6 +145,7 @@ const Comments: FC<CommentsProps> = ({ comments, isReviews }) => {
             comment={c}
             isReviews={isReviews}
             handleAddComment={handleAddComment}
+            setComment={() => {}}
           />
         );
       })}
@@ -138,74 +154,3 @@ const Comments: FC<CommentsProps> = ({ comments, isReviews }) => {
 };
 
 export default Comments;
-
-const CommentsStyle = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
-export const CartStyle = styled.div`
-  display: flex;
-  flex-direction: column;
-  //width: 90%;
-  margin-bottom: 40px;
-`;
-const CartHeader = styled.div`
-  display: flex;
-  justify-content: space-between;
-  border: 1px solid #e9e9e9;
-  border-style: solid solid none solid;
-  box-sizing: border-box;
-  h3,
-  span {
-    padding: 3px 10px;
-  }
-`;
-const CartContent = styled.div`
-  border: 1px solid #e9e9e9;
-  border-style: solid solid solid solid;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-bottom: 10px;
-  padding: 20px 10px;
-  //p {
-  //  //padding: 20px 10px;
-  //  margin: 0 0;
-  //}
-`;
-const AnswersWrapper = styled.div`
-  &:before {
-    position: absolute;
-    height: calc(100% - 10px);
-    content: "";
-    border-left: 1px solid #e9e9e9;
-    left: 0;
-    top: 0;
-  }
-  position: relative;
-  width: 100%;
-  padding: 0 0 0 15px;
-`;
-const TextareaWrapper = styled.div`
-  width: 100%;
-  margin-top: 10px;
-`;
-const Textarea = styled.textarea`
-  width: inherit;
-  display: block;
-  margin-bottom: 5px;
-`;
-
-const AnswerButton = styled.button`
-  background: transparent;
-  border: none;
-  color: ${({ theme }) => theme.colors.primaryGreen};
-  cursor: pointer;
-
-  img {
-    width: 10px;
-    height: 9px;
-    margin-right: 10px;
-  }
-`;

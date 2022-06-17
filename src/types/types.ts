@@ -34,5 +34,5 @@ export interface QuestionType {
   id: string;
   question: string;
   date: string;
-  answers?: { id: string; text: string; date: string }[];
+  answers?: { id: string; text: string; date: string }[] | null;
 }

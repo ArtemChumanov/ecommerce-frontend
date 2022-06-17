@@ -1,19 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { useLocation, useParams } from "react-router-dom";
-import FilterSideBar from "./FilterSideBar";
+import FilterSideBar from "./FilterSidebar/FilterSideBar";
 import { useAppDispatch, useAppSelector } from "../../../redux/store";
-import Subheader from "./Subheader";
+import Subheader from "./Subheader/Subheader";
 import styled from "styled-components/macro";
-import ProductsContainer from "./ProductsContainer";
+import ProductsContainer from "./ProductsContainer/ProductsContainer";
 import { productsGroupByCategory } from "../../../redux/products/productsSlice";
-//import { Ring } from "react-awesome-spinners";
-import { string } from "yup";
-import {
-  filterItems,
-  reformatObject,
-  sortProducts,
-} from "../../../utils/helpers";
-import Loader from "../../../components/shared/UI-elements/Loader/Loader";
+import { filterItems, sortProducts } from "../../../utils/helpers";
+
 const ratingS = [
   { status: 1, checked: false },
   { status: 2, checked: false },
@@ -32,8 +26,8 @@ const ListProducts = () => {
   const { showGroupedProduct } = useAppSelector((state) => state.products);
 
   const initState = {
-    filterBrands: brands.map((b) => ({ ...b, checked: false })),
-    filterCategories: categories.map((c) => ({ ...c, checked: false })),
+    filterBrands: brands?.map((b) => ({ ...b, checked: false })),
+    filterCategories: categories?.map((c) => ({ ...c, checked: false })),
     filterRating: ratingS,
     rangePrice: {
       from: 0,

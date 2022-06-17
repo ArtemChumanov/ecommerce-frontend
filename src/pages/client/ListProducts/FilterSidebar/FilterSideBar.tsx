@@ -1,18 +1,32 @@
-import React, { useEffect, useState } from "react";
-import styled from "styled-components/macro";
-import { useAppSelector } from "../../../redux/store";
-import CheckBox from "../../../components/shared/UI-elements/Checkbox/CheckBox";
+import React, { FC } from "react";
+import CheckBox from "../../../../components/shared/UI-elements/Checkbox/CheckBox";
 import { Slider } from "antd";
-import Input from "../../../components/shared/UI-elements/Input/Input";
+import Input from "../../../../components/shared/UI-elements/Input/Input";
 // @ts-ignore
 import FilterIcon from "assets/icons/filter.svg";
 // @ts-ignore
 import Star from "assets/icons/star.svg";
-import Rating from "../../../components/Rating/Rating";
+import Rating from "../../../../components/Rating/Rating";
 import update from "immutability-helper";
-import Button from "../../../components/shared/UI-elements/Button/Button";
+import Button from "../../../../components/shared/UI-elements/Button/Button";
+import {
+  FilterSideBarStyle,
+  HeaderSidebar,
+  FilterContainer,
+  CheckBoxListItem,
+  CategoryBlockStyle,
+  InputRangeStyle,
+  ButtonGroupStyle,
+} from "./FilterSideBar.styled";
 
-const FilterSideBar = ({
+interface FilterSideBarProps {
+  filter: any;
+  setFilter: (arg) => void;
+  handleSubmitFilter: () => void;
+  handleResetFilter: () => void;
+}
+
+const FilterSideBar: FC<FilterSideBarProps> = ({
   filter,
   setFilter,
   handleSubmitFilter,
@@ -24,6 +38,7 @@ const FilterSideBar = ({
       rangePrice: { from: value[0], to: value[1] },
     }));
   };
+
   return (
     <FilterSideBarStyle>
       <HeaderSidebar>
@@ -33,7 +48,7 @@ const FilterSideBar = ({
       <FilterContainer>
         <h3>Бренди</h3>
         <CategoryBlockStyle>
-          {filter.filterBrands.map((brand, i) => (
+          {filter.filterBrands?.map((brand, i) => (
             <CheckBoxListItem key={brand.name}>
               <CheckBox
                 checked={brand.checked}
@@ -59,7 +74,7 @@ const FilterSideBar = ({
 
         <h3>Рейтинг</h3>
         <CategoryBlockStyle>
-          {filter.filterRating.map((r, index) => (
+          {filter.filterRating?.map((r, index) => (
             <CheckBoxListItem key={index}>
               <CheckBox
                 value={index}
@@ -137,66 +152,3 @@ const FilterSideBar = ({
 };
 
 export default FilterSideBar;
-
-const HeaderSidebar = styled.div`
-  background: ${({ theme }) => theme.colors.black};
-  color: ${({ theme }) => theme.colors.white};
-  font-weight: 600;
-  font-size: 16px;
-  padding: 4px 0 4px 8px;
-  display: flex;
-  align-items: center;
-  img {
-    width: 15px;
-    height: 15px;
-    margin-right: 10px;
-  }
-`;
-
-const CheckBoxListItem = styled.div`
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-
-  span {
-    padding-left: 10px;
-  }
-`;
-
-const FilterSideBarStyle = styled.div`
-  width: 268px;
-  margin-right: 34px;
-  background: ${({ theme }) => theme.backgrounds.greyBackgrounds};
-  h3 {
-    margin: 0 0 18px;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 27px;
-  }
-`;
-const FilterContainer = styled.div`
-  padding: 8px 10px;
-`;
-const InputRangeStyle = styled.div`
-  display: flex;
-  margin-top: 23px;
-`;
-const ButtonGroupStyle = styled.div`
-  display: flex;
-  height: 25px;
-`;
-
-const CategoryBlockStyle = styled.div`
-  margin-bottom: 50px;
-
-  .ant-slider-handle {
-    margin-top: -5px;
-    border: solid 2px #f7941d !important;
-    cursor: pointer;
-    box-shadow: 0 0 0 !important;
-  }
-
-  .ant-slider-track {
-    background-color: #f7941d !important;
-  }
-`;

@@ -1,8 +1,6 @@
 import React, { FC, useState } from "react";
 import styled from "styled-components/macro";
-import { useAppDispatch, useAppSelector } from "../../../redux/store";
 import { Link, useHistory } from "react-router-dom";
-import { productsGroupByCategory } from "../../../redux/products/productsSlice";
 import { CategoryType } from "../../../types/types";
 
 interface CategoryBarProps {
@@ -30,7 +28,7 @@ const CategoryBar: FC<CategoryBarProps> = ({ categories }) => {
   };
   return (
     <NavbarDropdown>
-      {categories.map((i) => (
+      {categories?.map((i) => (
         <li key={i.id}>
           {i.subcategory?.length ? (
             <span onClick={() => groupByProductHandle(i)}>{i.name}</span>
@@ -65,10 +63,8 @@ const NavbarDropdownContent = styled.div`
       a,
       span {
         display: block;
-        //padding: 0 10px;
         color: #fff;
         font-size: 12px;
-        //line-height: 60px;
         text-decoration: none;
       }
       &:hover {
@@ -87,7 +83,6 @@ const NavbarDropdown = styled.ul`
   position: relative;
 
   & > li {
-    //margin: 0px auto;
     flex-grow: 1;
     a,
     span {
@@ -95,7 +90,6 @@ const NavbarDropdown = styled.ul`
       padding: 4px 10px;
       color: #fff;
       font-size: 20px;
-      //line-height: 60px;
       text-decoration: none;
     }
 

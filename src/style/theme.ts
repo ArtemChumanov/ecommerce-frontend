@@ -21,6 +21,8 @@ export const appTheme: DefaultTheme = {
     lightGray: "#606060",
     primaryGreen: "#6A983C",
     primaryOrange: "#f7941d",
+    darkGray: "#202020",
+    middleGray: "#2c2c2c",
   },
   borders: {
     primary: "1px solid #e5e5e5",

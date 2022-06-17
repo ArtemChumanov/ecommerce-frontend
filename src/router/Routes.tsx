@@ -1,7 +1,6 @@
 import React, { lazy, FC } from "react";
 import { RoutesConstants } from "./RoutesConstants";
 import { Redirect, Route, Switch } from "react-router-dom";
-
 const HomePage = lazy(() => import("../pages/client/Home/Home"));
 const ProductsListPage = lazy(
   () => import("../pages/client/ListProducts/ListProducts")

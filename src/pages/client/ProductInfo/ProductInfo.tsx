@@ -7,20 +7,13 @@ import Button from "../../../components/shared/UI-elements/Button/Button";
 import CarouselImage from "./CarouselImage/CarouselImage";
 import Comments from "./Comments/Comments";
 import {
-  fetchCurrentProduct,
-  fetchReviewByProduct,
+  fetchCurrentProduct1,
+  fetchReviewByProduct1,
 } from "redux/products/actions";
-//import ReactHtmlParser from 'react-html-parser'
-import {
-  ProductsCardWrapper,
-  SectionHead,
-  TitleH1,
-} from "../../../style/Global";
-import ItemCard from "../../../components/ItemCard/ItemCard";
+import { TitleH1 } from "../../../style/Global";
 import Tabs from "../../../components/Tabs/Tabs";
 import CharecteristicList from "./CharecteristicList/CharecteristicList";
 import Description from "./Description/Description";
-import { textDescription } from "../../../utils/mockData";
 import { useParams } from "react-router-dom";
 import { addProductToShoppingCart } from "redux/products/productsSlice";
 import moment from "moment";
@@ -34,22 +27,24 @@ import TelegramIcon from "assets/icons/telegram-svgrepo-com.svg";
 import InstagramIcon from "assets/icons/instagram-svgrepo-com.svg";
 // @ts-ignore
 import TwitterIcon from "assets/icons/twitter-svgrepo-com.svg";
-import SliderCarousel from "../../../components/SliderCarousel/SliderCarousel";
-import PrewiewInfo from "../Home/PrewiewInfo";
+import PreviewInfo from "../Home/PrewiewInfo";
 
 const ProductInfo = () => {
   const [counter, setCounter] = useState(1);
-  const { currentProduct, comments, products } = useAppSelector(
+  const { currentProduct, comments, products, isLoading } = useAppSelector(
     (state) => state.products
   );
+
   // @ts-ignore
   const { id } = useParams();
   const dispatch = useAppDispatch();
 
   useEffect(() => {
-    id && dispatch(fetchCurrentProduct(id));
-    dispatch(fetchReviewByProduct());
-  }, [id]);
+    if (id) {
+      dispatch(fetchReviewByProduct1());
+      dispatch(fetchCurrentProduct1(id));
+    }
+  }, []);
 
   const items = [
     { title: "Description" },
@@ -168,6 +163,7 @@ const ProductInfo = () => {
               ViberIcon,
             ].map((i) => (
               <Button
+                key={i}
                 title={"dd"}
                 imageButton
                 imagePath={i}
@@ -197,10 +193,10 @@ const ProductInfo = () => {
             </video>
           </div>
           <Comments comments={comments} isReviews />
-          <Comments comments={comments} isReviews={false} />
+          {/*<Comments comments={comments} isReviews={false} />*/}
         </Tabs>
       </TabsWrapper>
-      <PrewiewInfo title={"Similar products"} products={products || []} />
+      <PreviewInfo title={"Cхожі товари"} products={products || []} />
     </div>
   );
 };

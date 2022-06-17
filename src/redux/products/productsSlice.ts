@@ -4,13 +4,12 @@ import {
   createSlice,
   PayloadAction,
 } from "@reduxjs/toolkit";
-import { MockDataProducts } from "../../utils/mockData";
 import { RootState } from "../store";
 import update from "immutability-helper";
 import {
-  fetchCurrentProduct,
+  fetchCurrentProduct1,
   fetchGetProducts,
-  fetchReviewByProduct,
+  fetchReviewByProduct1,
 } from "./actions";
 
 import _ from "lodash";
@@ -26,7 +25,7 @@ interface IProductsState {
 }
 
 const initialState: IProductsState = {
-  isLoading: false,
+  isLoading: true,
   openShoppingCart: false,
   shoppingCartList: [],
   products: [],
@@ -127,23 +126,34 @@ const productSlice = createSlice({
         state.isLoading = false;
       }
     );
-    builder.addCase(fetchCurrentProduct.pending, (state: IProductsState) => {
+    builder.addCase(fetchGetProducts.rejected, (state: IProductsState) => {
+      state.isLoading = true;
+    });
+    /*********************/
+    builder.addCase(fetchCurrentProduct1.pending, (state: IProductsState) => {
       state.isLoading = true;
     });
     builder.addCase(
-      fetchCurrentProduct.fulfilled,
+      fetchCurrentProduct1.fulfilled,
       (state: IProductsState, { payload }) => {
         state.currentProduct = payload;
         state.isLoading = false;
       }
     );
-    builder.addCase(fetchReviewByProduct.pending, (state: IProductsState) => {
+
+    // builder.addCase(
+    //   fetchCurrentProduct.rejected,
+    //   (state: IProductsState, { payload }) => {
+    //     state.isLoading = true;
+    //   }
+    // );
+    //******************//
+    builder.addCase(fetchReviewByProduct1.pending, (state: IProductsState) => {
       state.isLoading = true;
     });
     builder.addCase(
-      fetchReviewByProduct.fulfilled,
+      fetchReviewByProduct1.fulfilled,
       (state: IProductsState, { payload }) => {
-        console.log(payload);
         state.comments = payload;
         state.isLoading = false;
       }

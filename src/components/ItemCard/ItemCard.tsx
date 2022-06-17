@@ -20,7 +20,6 @@ const ItemCard: FC<ItemCardProps> = ({ isProduct, item, view }) => {
     push({
       pathname: `/product/${item.id}`,
     });
-    dispatch(chooseProduct(item));
   };
   return (
     <CardStyle isProduct={isProduct}>

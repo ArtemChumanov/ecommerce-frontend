@@ -1,14 +1,23 @@
-import React from "react";
+import React, { FC } from "react";
 import { Carousel } from "react-carousel-minimal";
 
-const CarouselImage = ({ imagess, autoScroll, thumbnails }) => (
+interface CarouselImageProps {
+  imagess: { image: string }[];
+  autoScroll: boolean;
+  thumbnails: boolean;
+}
+
+const CarouselImage: FC<CarouselImageProps> = ({
+  imagess,
+  autoScroll,
+  thumbnails,
+}) => (
   <Carousel
     data={imagess}
     automatic={autoScroll}
     time={5000}
     width="100%"
     height="280px"
-    //radius="10px"
     captionPosition="bottom"
     pauseIconColor="white"
     pauseIconSize="20px"
@@ -17,10 +26,6 @@ const CarouselImage = ({ imagess, autoScroll, thumbnails }) => (
     thumbnails={thumbnails}
     thumbnailWidth="80px"
     style={{
-      // height: "auto",
-      // width: "auto",
-      // maxWidth: "400px",
-      // maxHeight: "280px",
       textAlign: "center",
     }}
   />

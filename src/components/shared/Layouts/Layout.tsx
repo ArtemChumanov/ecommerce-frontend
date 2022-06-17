@@ -11,16 +11,20 @@ import {
 import { useAppDispatch, useAppSelector } from "../../../redux/store";
 import Footer from "../../Footer/Footer";
 import ShoppingCart from "../../ShopingCart/ShoppingCart";
-import { fetchBrands, fetchGetCategory } from "../../../redux/categories/thunk";
+import {
+  fetchBrands,
+  fetchGetCategory,
+} from "../../../redux/categories/actions";
 import { fetchGetProducts } from "../../../redux/products/actions";
 //@ts-ignore
 import BasketIcon from "assets/icons/basket.svg";
 import { setOpenShoppingCart } from "../../../redux/products/productsSlice";
 
 const MainLayout = () => {
-  const { openShoppingCart, shoppingCartList } = useAppSelector(
+  const { openShoppingCart, shoppingCartList, isLoading } = useAppSelector(
     (state) => state.products
   );
+
   const [isVisible, setIsVisible] = useState(false);
   const dispatch = useAppDispatch();
 
@@ -51,6 +55,7 @@ const MainLayout = () => {
       </ShoppingCartStyle>
       <Background isVisible={isVisible} />
       <Footer />
+      {isLoading && <Loader />}
     </LayoutWrapper>
   );
 };

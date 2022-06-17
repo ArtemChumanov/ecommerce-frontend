@@ -1,27 +1,20 @@
-import { BrandType, CategoryType, ProductsType } from "../../types/types";
-import {
-  mockBrands,
-  mockCategory,
-  MockDataProducts,
-} from "../../utils/mockData";
+import { BrandType, CategoryType } from "../../types/types";
 import {
   ActionReducerMapBuilder,
   createSlice,
   PayloadAction,
 } from "@reduxjs/toolkit";
 import update from "immutability-helper";
-import { RootState } from "../store";
-import { fetchGetProducts } from "../products/actions";
-import { fetchBrands, fetchGetCategory } from "./thunk";
+import { fetchBrands, fetchGetCategory } from "./actions";
 
 interface ICategoryState {
   isLoading: boolean;
-  categories: any;
+  categories: CategoryType[];
   brands: BrandType[];
 }
 
 const initialState: ICategoryState = {
-  isLoading: false,
+  isLoading: true,
   categories: [],
   brands: [],
 };
